@@ -8,8 +8,8 @@ function App() {
 
   return (
     <>
-    <section class="flex items-center justify-center h-screen bg-green-400">
-      <section class="">  
+    <section className="flex items-center justify-center h-screen bg-green-400">
+      <section className="">  
         {/* <Habit  props habitName = "Reading" streak = "2"/> */}
         <Colours />
       </section>
