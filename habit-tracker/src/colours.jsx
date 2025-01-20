@@ -1,23 +1,20 @@
 import { useEffect, useState } from "react"
 
 const colorToClass = {
-    blue:  "bg-blue-200",
-    green: "bg-green-200",
-    red:   "bg-red-200",
-    amber: "bg-amber-200"
+    blue:  "bg-blue-400",
+    green: "bg-green-400",
+    red:   "bg-red-400",
+    amber: "bg-amber-400"
   };
 
 export const Colours = () =>{
     const [colour, setColour] = useState("blue")
-    const [cClass, setCClass] = useState("border-2 w-24 h-20 bg-lime-200")
     useEffect(()=>{
 
-    },[colour,cClass])
+    },[colour])
 
     const handleColourChange = (colourInput)=>{
         setColour(colourInput)
-        setCClass(`border-2 w-24 h-20 bg-${colourInput}-200`)
-        console.log(cClass)
     }
     
     return(
@@ -27,7 +24,7 @@ export const Colours = () =>{
             <div onClick={()=>{handleColourChange('red')}}>red</div>
             <div onClick={()=>{handleColourChange('amber')}}>Amber</div>
             <div>The chosen colour: {colour}</div>
-            <div className={cClass}></div>
+            <div className={`border-2 w-24 h-20 ${colorToClass[colour]}`}></div>
         </>
     )
 }
