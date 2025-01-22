@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <section className="flex items-center justify-center h-screen bg-green-400">
+    <section className="flex items-center justify-center h-screen">
       <section className="">  
         {/* <Habit  props habitName = "Reading" streak = "2"/> */}
         <Colours />
