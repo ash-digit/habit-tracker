@@ -18,15 +18,19 @@ export const Colours = () =>{
     }
     
     return(
-        <><div>
-            <div className="w-4 h-4 bg-blue-400" onClick={()=>{handleColourChange('blue')}}></div>
-            <div className="w-4 h-4 bg-green-400" onClick={()=>{handleColourChange('green')}}></div>
-            <div className="w-4 h-4 bg-red-400" onClick={()=>{handleColourChange('red')}}></div>
-            <div className="w-4 h-4 bg-amber-400" onClick={()=>{handleColourChange('amber')}}></div>
+        <><div className="flex justify-between w-60    bg-white rounded-xl">
+            <div className="flex justify-around w-full items-center flex-wrap p-2">
+            <div className="w-4 h-4 bg-blue-400 rounded-sm" onClick={()=>{handleColourChange('blue')}}></div>
+            <div className="w-4 h-4 bg-green-400 rounded-sm" onClick={()=>{handleColourChange('green')}}></div>
+            <div className="w-4 h-4 bg-red-400 rounded-sm" onClick={()=>{handleColourChange('red')}}></div>
+            <div className="w-4 h-4 bg-amber-400 rounded-sm" onClick={()=>{handleColourChange('amber')}}></div>
+            </div>
+            
+            <div className={`border-2 w-24 h-20 p- ${colorToClass[colour]}`}></div>
         </div>
             
             
-            <div className={`border-2 w-24 h-20 ${colorToClass[colour]}`}></div>
+            
         </>
     )
 }
