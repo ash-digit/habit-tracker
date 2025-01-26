@@ -1,0 +1,12 @@
+.something{
+    background-color: chartreuse;
+}
+
+.something:hover::after{
+    opacity: 0.5;
+    content: " dadada";
+}
+
+.something::before{
+    content: "rararar ";
+}
