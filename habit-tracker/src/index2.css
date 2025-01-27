@@ -10,3 +10,14 @@
 .something::before{
     content: "rararar ";
 }
+
+.somethig1{
+    animation: tryout 2s linear infinite;
+    transition: .3s ease-in-out;;
+}
+
+@keyframes tryout {
+    0% {background-color: aqua;}
+    50% {background-color: black;}
+    100% {background-color: yellow;}
+}

@@ -63,7 +63,7 @@ html, body{
 }
 
 .btn:hover::before {
-
+    opacity: 1;
 }
 
 .btn:active:after {
