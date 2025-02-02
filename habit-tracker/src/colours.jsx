@@ -26,7 +26,7 @@ export const Colours = () =>{
             <div className="w-4 h-4 bg-amber-400 rounded-sm" onClick={()=>{handleColourChange('amber')}}></div>
             </div>
             
-            <div className={`border-2 w-24 h-20 p- ${colorToClass[colour]}`}></div>
+              <div className={`border-2 w-24 h-20 p- ${colorToClass[colour]}`}></div>
         </div>
             
             

@@ -21,3 +21,27 @@
     50% {background-color: black;}
     100% {background-color: yellow;}
 }
+
+.somethingMovingContainer{
+    border: 5px solid rgb(134, 125, 134);
+    opacity: 0.5;
+    width: 200px;
+    height: 200px;
+    /* position: relative; */
+}
+
+.square{
+    background-color: rgb(0, 0, 0);
+    width: 20px;
+    height: 20px;
+    /* position: absolute; */
+    animation: squareMoves 1s ease-in-out infinite;
+}
+
+@keyframes squareMoves {
+    0%{translate:0px 0px;}
+    25%{translate: 180px 0px;}
+    50%{translate: 180px 180px;}
+    75%{translate: 0px 180px;}
+    100%{translate: 0px 0px;}
+}
