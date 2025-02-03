@@ -23,18 +23,16 @@
 }
 
 .somethingMovingContainer{
-    border: 5px solid rgb(210, 191, 210);
-    opacity: 0.5;
+    border: 5px dotted rgb(210, 191, 210);
+    background-color: rgb(0, 0, 0);
     width: 200px;
     height: 200px;
-    /* position: relative; */
 }
 
 .square{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 253, 253);
     width: 20px;
     height: 20px;
-    /* position: absolute; */
     animation-name: squareMoves;
     animation-duration: 1s;
     animation-delay: 1s;
@@ -62,7 +60,7 @@
     background-color: rgb(0, 0, 0);
     width: 20px;
     height: 20px;
-    animation: squareMoves2 2s ease-in-out 0s infinite normal none;
+    animation: squareMoves2 1.5s ease-in-out 0s infinite normal none;
 }
 
 @keyframes squareMoves2 {
@@ -86,4 +84,34 @@
         top: 0px;
         left: 0px;
     }
+}
+
+.ribbonContainer{
+    border: 5px solid rgb(183, 170, 170);
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.ribbon-A{
+    height: 10px;
+    width: 300px;
+    background-image: linear-gradient( to right, #542773, #BFF272, #F2E5A0, #D9923B, #D93E30);
+    animation: ribbonAMoves 2s ease-in-out 0s infinite alternate-reverse none;
+}
+.ribbon-B{
+    height: 10px;
+    width: 300px;
+    background-image: linear-gradient( to right, #542773, #BFF272, #F2E5A0, #D9923B, #D93E30);
+
+    animation: ribbonBMoves 2s ease-in-out 0s infinite alternate none;
+}
+
+@keyframes ribbonAMoves {
+    0%{translate:0px 0px;}
+    100%{translate: -95px 0px;}  
+}
+@keyframes ribbonBMoves {
+    0%{translate:0px 0px;}
+    100%{translate: -95px 0px;}  
 }
